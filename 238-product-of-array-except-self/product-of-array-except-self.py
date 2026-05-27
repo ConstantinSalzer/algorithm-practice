@@ -1,6 +1,6 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        res = list(range(len(nums)))
+        res = [1] * len(nums)
         res[0] = 1
         rechts = nums[len(nums)-1]
         for i in range (1, len(nums)):
